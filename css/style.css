@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #eeeae2;
+  position: relative;
+}
+nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navMenu {
+  display: flex;
+  gap: 20px;
+}
+.navMenu h4 {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.589);
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.741);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.navMenu h4 a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.741);
+  z-index: 9;
+  position: relative;
+  transition: all ease 0.3s;
+}
+.navMenu h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 60%;
+    transition: all ease 0.4s;
+}
+.navMenu h4:hover::after {
+    border-radius: 0;
+    bottom: 0;
+    color: white;
+}
+.navMenu h4:hover a {
+  color: white;
+}
