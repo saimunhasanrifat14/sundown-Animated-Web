@@ -1,8 +1,12 @@
+@font-face {
+  font-family: Neu;
+  src: url(/NeueHaasDisplayMediu.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: Neu;
 }
 html,
 body {
@@ -10,13 +14,15 @@ body {
   width: 100%;
 }
 #page1 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #eeeae2;
   position: relative;
+  padding: 0 30px;
 }
+/************* navber ************/
 nav {
-  padding: 30px;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,21 +50,177 @@ nav {
   transition: all ease 0.3s;
 }
 .navMenu h4::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    left: 0;
-    bottom: -100%;
-    border-radius: 60%;
-    transition: all ease 0.4s;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 60%;
+  transition: all ease 0.4s;
 }
 .navMenu h4:hover::after {
-    border-radius: 0;
-    bottom: 0;
-    color: white;
+  border-radius: 0;
+  bottom: 0;
+  color: white;
 }
 .navMenu h4:hover a {
   color: white;
 }
+/************* navber ************/
+
+/* ============= HeroSection ============= */
+.HeroSection {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2.5vw;
+  z-index: 1;
+}
+.HeroSection__left p {
+  font-size: 27.648px;
+  font-weight: 700;
+  line-height: 30.72px;
+  color: rgb(0, 0, 0);
+}
+.HeroSection__left {
+  max-width: 400px;
+}
+.HeroSection__right h1 {
+  font-size: 153.6px;
+  font-weight: 700;
+  line-height: 122.88px;
+  color: rgb(0, 0, 0);
+  text-align: end;
+}
+/* ============= HeroSection ============= */
+/* ============= Hero shape ============= */
+.hero_shape {
+  position: absolute;
+  width: 46vw;
+  height: 36vw;
+  right: 0;
+  top: 65vh;
+  z-index: 2;
+}
+.shape1 {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 60%;
+  background-color: #fe360a;
+  filter: blur(30px);
+  position: absolute;
+  animation-name: anima1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.shape2 {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background-color: #fe360a;
+  filter: blur(30px);
+  position: absolute;
+  animation-name: anima2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.shape3 {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background-color: #fe360a;
+  filter: blur(30px);
+  position: absolute;
+  animation-name: anima3;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.shape4 {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background-color: #fe360a;
+  filter: blur(30px);
+  position: absolute;
+  animation-name: anima4;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anima1{
+  from{
+    transform: translate(-15%, -5%);
+  }
+  to{
+    transform: translate(0%, 10%);
+  }
+}
+@keyframes anima2{
+  from{
+    transform: translate(0%, 10%);
+  }
+  to{
+    transform: translate(25%, -5%);
+  }
+}
+@keyframes anima3{
+  from{
+    transform: translate(25%, 5%);
+  }
+  to{
+    transform: translate(-20%, 10%);
+  }
+}
+@keyframes anima4{
+  from{
+    transform: translate(60%, 10%);
+  }
+  to{
+    transform: translate(70%, 0%);
+  }
+}
+
+
+/* ============= Hero shape ============= */
+/* ============= videoSection ============= */
+.videoSection {
+  width: 100%;
+  padding: 60px 0;
+  z-index: 10;
+  position: relative;
+}
+.videoSection video {
+  border-radius: 50px;
+  width: 100%;
+}
+/* ============= videoSection ============= */
+/* ============= marqueeSection ============= */
+.marqueeSection marquee {
+  display: flex;
+}
+.marqueeSection marquee span {
+  font-size: 50px;
+  margin: 0 20px;
+}
+.marqueeSection marquee span::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  right: 0;
+  top: 0;
+}
+/* ============= marqueeSection ============= */
