@@ -9,8 +9,10 @@ let fixed__image = document.querySelector(".fixed__image");
 elemContainer.addEventListener("mouseenter", () => {
   fixed__image.style.display = "block";
 });
-elemContainer.addEventListener("mouseleave", () => {
-  fixed__image.style.display = "none";
+elemContainer.addEventListener("mouseleave", (event) => {
+    if (!event.relatedTarget || !fixed__image.contains(event.relatedTarget)) {
+        fixed__image.style.display = "none";
+    }
 });
 
 let elem = document.querySelectorAll(".elem");
@@ -30,17 +32,17 @@ const contentData = [
   {
     type: "design",
     img: "https://sundown-ivory.vercel.app/page4-1.webp",
-    text: "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative.",
+    text: "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.",
   },
   {
     type: "project",
     img: "https://sundown-ivory.vercel.app/page4-2.webp",
-    text: "We manage projects efficiently from concept to execution, ensuring every detail aligns with the vision and goals of our clients.",
+    text: "Once we have a design, our production team takes the lead in bringing it to life. We manage all stages of the project, from build specifications and technical drawings to site surveys, vendor management, and 2D & 3D production. We have an extensive network of partners to meet each unique design and project need.",
   },
   {
     type: "execution",
     img: "https://sundown-ivory.vercel.app/page4-3.webp",
-    text: "Our execution process brings designs to reality, using high-quality materials and precise techniques to ensure outstanding results.",
+    text: "We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.",
   },
 ];
 
