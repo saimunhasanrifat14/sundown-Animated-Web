@@ -6,12 +6,18 @@
     <title>Sundown</title>
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="/favicon.png" type="/favicon.png" />
   </head>
   <body>
+    <div class="fixed__image"></div>
     <div id="main">
       <div id="page1">
         <nav>
@@ -103,39 +109,212 @@
         </div>
       </div>
       <div class="page3">
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Makers Studio HOI</h2>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>50th Anniversary</h2>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>
-            NYFW Popup</h2>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Air Force 1 2021</h2>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>
-            SOHO NYC</h2>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>SOHO 2023</h2>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>
-            Play New Kidvision</h2>
+        <h4 class="page4title page3title">FEATURED PROJECTS</h4>
+        <div class="elemContainer">
+          <div
+            class="elem"
+            imageData="https://images.unsplash.com/photo-1700975928909-da4a46227a47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8"
+          >
+            <div class="overlay"></div>
+            <h2>Makers Studio HOI</h2>
+            <div class="elem_details">
+              <h3>NIKE</h3>
+              <p>Environment</p>
+            </div>
+          </div>
+          <div
+            class="elem"
+            imageData="https://images.unsplash.com/photo-1701077137611-9be394bf62f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D"
+          >
+            <div class="overlay"></div>
+            <h2>50th Anniversary</h2>
+            <div class="elem_details">
+              <h3>ARC'TERYX</h3>
+              <p>Environment</p>
+            </div>
+          </div>
+          <div
+            class="elem"
+            imageData="https://images.unsplash.com/photo-1701014159309-4a8b84faadfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D"
+          >
+            <div class="overlay"></div>
+            <h2>NYFW Popup</h2>
+            <div class="elem_details">
+              <h3>NIKE</h3>
+              <p>Experiencal</p>
+            </div>
+          </div>
+          <div
+            class="elem"
+            imageData="https://images.unsplash.com/photo-1700924546093-f914fd5b8814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D"
+          >
+            <div class="overlay"></div>
+            <h2>Air Force 1 2021</h2>
+            <div class="elem_details">
+              <h3>CONVERSE</h3>
+              <p>Environment</p>
+            </div>
+          </div>
+          <div
+            class="elem"
+            imageData="https://images.unsplash.com/photo-1700601437860-e66da79cf6d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D"
+          >
+            <div class="overlay"></div>
+            <h2>SOHO NYC</h2>
+            <div class="elem_details">
+              <h3>AFTERPAY</h3>
+              <p>Eperiencal</p>
+            </div>
+          </div>
+          <div
+            class="elem"
+            imageData="https://images.unsplash.com/photo-1700769025506-6c3dcb9ec9b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D"
+          >
+            <div class="overlay"></div>
+            <h2>SOHO 2023</h2>
+            <div class="elem_details">
+              <h3>NIKE</h3>
+              <p>Environment</p>
+            </div>
+          </div>
+          <div
+            class="elem"
+            imageData="https://images.unsplash.com/photo-1700601437860-e66da79cf6d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D"
+          >
+            <div class="overlay"></div>
+            <h2>Play New Kidvision</h2>
+            <div class="elem_details">
+              <h3>NIKE</h3>
+              <p>Environment</p>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="page4">
+        <h4 class="page4title">WHO WE WORK WITH</h4>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper__item">
+                <img
+                  src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15ff_Nike.svg"
+                  alt=""
+                />
+                <p>
+                  Retained Production support across retail and events in NY,
+                  CHI, LA. Creative Design, Design Management,
+                  Production/Project Management, and execution of work from
+                  concept to installation across the Country.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__item">
+                <img
+                  src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg"
+                  alt=""
+                />
+                <p>
+                  Creative Concepting, Design, Design Management, Project
+                  Management, and execution of work from concept to installation
+                  across the Country. Cross functional communication and
+                  management of third party partners.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__item">
+                <img
+                  src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fd_Arc%E2%80%99teryx.svg"
+                  alt=""
+                />
+                <p>
+                  Production and design along with install oversight and
+                  execution support for the SoHo store opening on Broadway St,
+                  New York. Also working on creative and production work for a
+                  new store opening in Glendale, California.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__item">
+                <img
+                  src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg"
+                  alt=""
+                />
+                <p>
+                  Design and Production partner for Hunter Holiday 2022 Pop-in
+                  at Nordstrom 57th St, New York, including activations in
+                  Women’s, Men’s and Kid’s zones. Thirty-five (35) additional
+                  smaller take-downs in Nordstrom stores across the US. Concept
+                  design for Holiday boot customization events in stores across
+                  winter 2022.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__item">
+                <img
+                  src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg"
+                  alt=""
+                />
+                <p>
+                  Creative, Design, and Production Partner for 2023 CES. Scope
+                  Included creation of Branding Identity, Assets, and Digital
+                  Content, Design, Production design, Production oversight and
+                  Installation of client activations for IBM, Delta, Instacart,
+                  and more.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__item">
+                <img
+                  src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1602_AfterPay.svg"
+                  alt=""
+                />
+                <p>
+                  Creative, Design, and Production Partner for 2022 NY Fashion
+                  Week Pop-Up space. In Partnership with B-Reel scope including
+                  creation of Final Design, Design Assets, 3D Renders,
+                  Production design, Production/Partner oversight and creation
+                  of a two (2) story pop-up for Afterpay’s clients such as
+                  Crocs, JD Sports, Container Store, & Revolve.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page5">
+        <div class="container">
+          <div class="sidebar">
+            <button class="tab-button active" data-tab="design">Design</button>
+            <button class="tab-button" data-tab="project">Project</button>
+            <button class="tab-button" data-tab="execution">Execution</button>
+          </div>
+
+          <div class="content">
+            <img
+              id="display-image"
+              src="https://sundown-ivory.vercel.app/page4-1.webp"
+              alt="Design"
+              style="width: 100%; height: auto"
+            />
+            <p id="summary-text">
+              Our team works with our clients to refine an idea and concept into
+              an executable design. We create a final design that encompasses
+              the brand narrative.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="page6">dd</div>
     </div>
+    <div class="footer">
+      <h1>Sundown</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="js/main.js"></script>
   </body>
