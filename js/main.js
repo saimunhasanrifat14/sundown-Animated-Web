@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("#main"),
-  smooth: true,
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector("#main"),
+//   smooth: true,
+// });
 
 let elemContainer = document.querySelector(".elemContainer");
 let fixed__image = document.querySelector(".fixed__image");
@@ -26,6 +26,12 @@ elem.forEach((e) => {
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
+  breakpoints: {
+    1024: { slidesPerView: 4 }, // ল্যাপটপে ৪টা
+    768: { slidesPerView: 3 },  // ট্যাবলেটে ৩টা
+    480: { slidesPerView: 2 },  // মোবাইলে ২টা
+    0: { slidesPerView: 1 }     // ছোট স্ক্রিনে ১টা
+}
 });
 
 const contentData = [
@@ -46,26 +52,23 @@ const contentData = [
   },
 ];
 
-// Select DOM elements
+
 const buttons = document.querySelectorAll(".tab-button");
 const image = document.getElementById("display-image");
 const text = document.getElementById("summary-text");
 
-// Add event listener to each button
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    // Remove 'active' class from the currently active button
-    document.querySelector(".tab-button.active").classList.remove("active");
+buttons.forEach((button)=>{
+  button.addEventListener("click", ()=>{
+    let activebutton = document.querySelector(".tab-button.active")
+    activebutton.classList.remove("active")
+    button.classList.add("active")
 
-    // Add 'active' class to the clicked button
-    button.classList.add("active");
+    let clickedButton = button.getAttribute("data-tab")
+    let content = contentData.find(item => item.type === clickedButton)
 
-    // Get the corresponding content using data-tab attribute
-    const tab = button.getAttribute("data-tab");
-    const tabContent = contentData.find((item) => item.type === tab);
+    image.src = content.img;
+    text.innerText = content.text
+    
+  })
+})
 
-    // Update the image and text immediately
-    image.src = tabContent.img;
-    text.innerText = tabContent.text;
-  });
-});
