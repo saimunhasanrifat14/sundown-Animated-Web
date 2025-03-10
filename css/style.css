@@ -379,6 +379,9 @@ nav h3{
   padding: 0 2vw;
   overflow: hidden;
 }
+.elemForMobile{
+  display: none;
+}
 .elem_details {
   display: flex;
   flex-direction: column;
@@ -459,6 +462,17 @@ nav h3{
   bottom: 0%;
   border-radius: 30px;
   transition: all linear 0.2s;
+}
+
+
+.elemMobile{
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: blue;
+  padding: 0 4vw ;
+}
+.elemMobile img{
+  width: 100%; 
 }
 /************************** page 3 *************************/
 
@@ -868,7 +882,7 @@ nav h3{
   width: 6px;
   height: 6px;
 }
-.page3{
+.elemContainer{
   display: none;
 }
 .container{
@@ -947,5 +961,9 @@ nav h3{
   height: 80vh;
   top: 0%;
   left: -20%;
+}
+
+.elemForMobile{
+  display: block;
 }
 }
