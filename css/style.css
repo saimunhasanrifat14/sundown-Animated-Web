@@ -468,11 +468,27 @@ nav h3{
 .elemMobile{
   width: 100%;
   margin-bottom: 20px;
-  background-color: blue;
-  padding: 0 4vw ;
+  padding: 3vw ;
 }
 .elemMobile img{
   width: 100%; 
+  border-radius: 20px;
+}
+.elemMobile h2{
+  font-size: 9vw;
+  margin-top: 8px;
+}
+.elemMobileDetails{
+  margin-top: 16px;
+}
+.elemMobileDetails h3{
+  font-size: 6vw;
+  font-weight: 200;
+}
+.elemMobileDetails p{
+  font-weight: 200;
+  font-size: 4vw;
+  color: gray;
 }
 /************************** page 3 *************************/
 
@@ -897,7 +913,7 @@ nav h3{
   padding: 40px;
 }
 .page4 {
-  min-height: 60vh;
+  min-height: auto;
   padding: 15vw 3vw;
 }
 .swiper__item p {
