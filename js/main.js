@@ -72,3 +72,16 @@ buttons.forEach((button)=>{
   })
 })
 
+let full = document.querySelector(".full_scr")
+var menu = document.querySelector(".respMenu");
+var flag = 0
+menu.addEventListener("click", ()=>{
+  if(flag === 0){
+    full.style.top = 0;
+    flag = 1 ;
+  }else{
+    full.style.top = "-100%"
+    flag= 0
+  }
+})
+

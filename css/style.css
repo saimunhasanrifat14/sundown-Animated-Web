@@ -25,7 +25,7 @@ body {
 }
 #main {
   position: relative;
-  z-index: 10;
+  /* z-index: 10; */
 }
 #page1 {
   min-height: 100vh;
@@ -40,10 +40,16 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .navMenu {
   display: flex;
   gap: 20px;
+  position: relative;
+}
+.respMenu{
+  z-index: 1000;
+  position: relative;
 }
 .navMenu h4 {
   padding: 10px 20px;
@@ -753,7 +759,34 @@ nav h3{
 /************************** footer *************************/
 
 
-
+.full_scr{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  z-index: 15;
+  top: -100%;
+  transition: all ease .6s;
+}
+.full_div1{
+  height: 50%;
+  width: 100%;
+  background-color: #eeeae2;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  padding-left: 4vw;
+  padding-bottom: 4vw;
+  gap: 2vw;
+}
+.full_div1 h4 a{
+  font-size: 10vw;
+  text-decoration: none;
+  color: black;
+}
 
 @media (max-width:600px) {
  
@@ -797,8 +830,15 @@ nav h3{
   .navMenu{
     display: none;
   }
-  nav h3{
+  .respMenu{
     display: block;
+    padding: 3vw 5vw;
+    border: 1px solid #666;
+    border-radius: 50px;
+    font-size: 4vw;
+    font-weight: 200;
+    padding-left: 10vw;
+    z-index: 100;
   }
   .gola {
     height: 25px;
